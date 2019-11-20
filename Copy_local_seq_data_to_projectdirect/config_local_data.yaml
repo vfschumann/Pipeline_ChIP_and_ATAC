@@ -1,0 +1,20 @@
+
+fastq_path:
+  "/fast/AG_Lab/user/seq-folder/seq-directory"
+   
+samples:
+- adult_male_S3
+- adult_female_S4
+- embryo_96hpf_S5
+- embryo_72hpf_S6
+
+directories: #subdirectories of the seq-directory with the read files per sample
+- UO_AH_781
+- UO_AH_782
+- UO_AH_783
+- UO_AH_784
+ 
+reads:
+- R1
+- R2
+

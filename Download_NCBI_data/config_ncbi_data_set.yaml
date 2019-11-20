@@ -1,0 +1,32 @@
+# example file, adjust filenames, SRA numbers and fastq_path
+
+samples:
+  Uninjured_input: "SRX1799048"
+  Uninjured_chip_rep1: "SRX1799049"
+  Uninjured_chip_rep2: "SRX1799050"
+  Uninjured_chip_rep3: "SRX1799051"
+  14dpi_input: "SRX1799052"
+  14dpi_chip_rep1: "SRX1799053"
+  14dpi_chip_rep2: "SRX1799054"
+  7dpt_input: "SRX1799055"
+  7dpt_chip_rep1: "SRX1799056"
+  7dpt_chip_rep2: "SRX1799057"
+  
+fastq_path:
+    "/fast/AG_Lab/user/0_Projects/dataset1/data/" #change to your paath for the project dir
+    
+reads:
+- 1
+
+replicas:
+- 1
+- 2
+
+bigWigs:
+- Uninjured_chip_rep1
+- Uninjured_chip_rep2
+- 14dpi_chip_rep1
+- 14dpi_chip_rep2
+- 7dpt_chip_rep1
+- 7dpt_chip_rep2
+
