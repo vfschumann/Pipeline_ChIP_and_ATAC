@@ -1,0 +1,34 @@
+# Example file, change Sample names, fastq_path, number of replicas (comment out the numbers which you don't have),
+# adapters (identified with fastqc, shall be cutted by cutadapt)
+
+fastq_path: # change to your <Projectdir>/data path
+    "/path/user/0_Projects/dataset_pairedend/data"
+
+samples: # change sample name and corresponding SRA number
+    wt_ATACseq_GFPpos_24hpf_rep1: "SRR7882260"
+    wt_ATACseq_GFPpos_24hpf_rep2: "SRR7882261"
+    wt_ATACseq_GFPpos_48hpf_rep1: "SRR7882262"
+    wt_ATACseq_GFPpos_48hpf_rep2: "SRR7882263"
+    wt_ATACseq_GFPpos_72hpf_rep1: "SRR7882264"
+    wt_ATACseq_GFPpos_72hpf_rep2: "SRR7882265"
+    
+    
+reads:
+- 1
+- 2
+
+adapters: #add your identified adapter sequences here
+- TCGTCGGCAGCGTCAGATGTGTATAAGAGACAG
+- GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAG
+
+adapters_per_read: #add your identified adapter sequences here
+    TCGTCGGCAGCGTCAGATGTGTATAAGAGACAG: "1"
+    GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAG: "2"    
+
+bigWigs: #change samples names, recommended according to the name used with "samples"
+- wt_ATACseq_GFPpos_24hpf_rep1
+- wt_ATACseq_GFPpos_24hpf_rep2
+- wt_ATACseq_GFPpos_48hpf_rep1
+- wt_ATACseq_GFPpos_48hpf_rep2
+- wt_ATACseq_GFPpos_72hpf_rep1
+- wt_ATACseq_GFPpos_72hpf_rep2
