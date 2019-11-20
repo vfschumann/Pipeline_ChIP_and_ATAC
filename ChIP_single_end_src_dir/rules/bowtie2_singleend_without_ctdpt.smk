@@ -1,6 +1,3 @@
-
-bowtie2_index = "/fast/AG_Ohler/Scott/danRer11/noAlt_danRer11"
-
 rule aligning_bowtie2:
         input:
             "../data/{sample}.fastq.gz"
