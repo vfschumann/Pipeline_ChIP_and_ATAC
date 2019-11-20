@@ -41,7 +41,7 @@ for name, number in sra_files.items():
 ########
 # change path for fastq-dump
 
-    subprocess.call(['/home/vschuma/.guix-profile/bin/fastq-dump --gzip --split-files  --outdir ../data/ {}'.format(number)], 
+    subprocess.call(['/home/user/.guix-profile/bin/fastq-dump --gzip --split-files  --outdir ../data/ {}'.format(number)], 
 shell=True)
     
 ######

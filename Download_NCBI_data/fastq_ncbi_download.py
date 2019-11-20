@@ -7,7 +7,7 @@ print("let's start downloading")
 ###########
 # change config file
 
-with open("config_data_set.yaml", "r") as config_file:
+with open("config_ncbi_data_set.yaml", "r") as config_file:
         config = yaml.safe_load(config_file)
 ##########
         
@@ -18,7 +18,7 @@ for name, number in sra_files.items():
 ########
 # change path for fastq-dump
 
-    subprocess.call(['/home/vschuma/.guix-profile/bin/fastq-dump --gzip --split-files  --outdir ../data/ {}'.format(number)], 
+    subprocess.call(['/home/user/.guix-profile/bin/fastq-dump --gzip --split-files  --outdir ../data/ {}'.format(number)], 
 shell=True)
     
 ######

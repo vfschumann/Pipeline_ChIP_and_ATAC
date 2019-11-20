@@ -1,6 +1,7 @@
-# example file, adjust filenames, SRA numbers and fastq_path
+# Example file, change Sample names, fastq_path, number of replicas (comment out the numbers which you don't have),
+# adapters (identified with fastqc, shall be cutted by cutadapt)
 
-samples:
+samples: # change sample name and corresponding SRA number
   Uninjured_input: "SRX1799048"
   Uninjured_chip_rep1: "SRX1799049"
   Uninjured_chip_rep2: "SRX1799050"
@@ -12,21 +13,15 @@ samples:
   7dpt_chip_rep1: "SRX1799056"
   7dpt_chip_rep2: "SRX1799057"
   
-fastq_path:
+fastq_path: # change to your <Projectdir>/data path
     "/fast/AG_Lab/user/0_Projects/dataset1/data/" #change to your paath for the project dir
     
 reads:
 - 1
 
-replicas:
+replicas: #comment out, what you don't have
 - 1
 - 2
 
-bigWigs:
-- Uninjured_chip_rep1
-- Uninjured_chip_rep2
-- 14dpi_chip_rep1
-- 14dpi_chip_rep2
-- 7dpt_chip_rep1
-- 7dpt_chip_rep2
+
 
