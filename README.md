@@ -1,6 +1,9 @@
 # Pipeline_ChIP_and_ATAC
 
 ## Requried software
+* sra-tools
+* fastqc
+* multiqc
 * cutadapt
 * bowtie2
 * samtools
@@ -20,7 +23,7 @@ If you need do download published data sets from NCBI with sra number:
     * either use the .py file or the cluster script and edit it as written in the comments
 
 If you have the sequencing data in your local network it is recommended to copy the data files to your working directory:
-* Use the dir *Copy_local_seq_data_to_projectdirect+
+* Use the dir *Copy_local_seq_data_to_projectdirect*
    *  Edit the config files as written in the comments 
    * you can then run *snakemake_copy_data_from_local.py* either within the terminal or as a cluster job
    
