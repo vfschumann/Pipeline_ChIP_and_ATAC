@@ -1,15 +1,15 @@
 # Pipeline_ChIP_and_ATAC
 
 ## Requried software
-* sra-tools
-* fastqc
-* multiqc
+* sra-tools https://github.com/ncbi/sra-tools
+* fastqc https://www.bioinformatics.babraham.ac.uk/projects/fastqc/
+* multiqc https://multiqc.info/
 * cutadapt
 * bowtie2
 * samtools
 * macs2
 * bedtools
-* bedGraphToBigWig
+* bedGraphToBigWig https://www.encodeproject.org/software/bedgraphtobigwig/
 
 ## Walkthrough
 It is recommended to start with a *Projectdir/src* directory where all the used snakemake, config, qsub files go (without subdirectories) and a subdriectory called "rules" with the used snakemake rules. The rest of the structure will be build by the snakemake scripts. Of course you can use another structure but then you have to go through all the path definitions and input and output fields of the snakemake rules. 
@@ -17,7 +17,7 @@ It is recommended to start with a *Projectdir/src* directory where all the used 
 ### Data download
 If you need do download published data sets from NCBI with sra number:
 * You need to install 
-    * sra-tools https://github.com/ncbi/sra-tools
+    * sra-tools 
 * Use the dir *Download_NCBI_data*
     * Edit the config files as written in the comments 
     * either use the .py file or the cluster script and edit it as written in the comments
@@ -39,8 +39,8 @@ If you have the sequencing data in your local network it is recommended to copy 
            
 ### Quality control
 * You need to install
-   * fastqc https://www.bioinformatics.babraham.ac.uk/projects/fastqc/
-   * multiqc https://multiqc.info/
+   * fastqc 
+   * multiqc 
 * put *qsub_fastqc_multiqc.sh* to */src* and run it 
 * from the multiqc.html figure out if it identified any adapter sequences
 
