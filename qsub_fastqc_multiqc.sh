@@ -41,6 +41,7 @@ echo "==================="
 source /home/user/.guix-profile/etc/profile # source your guix profile to have access to all your tools
 
 #####
+mkdir ../results/fastqc
 
 fastqc -o ../results/fastqc ../data/*fastq.gz 
  

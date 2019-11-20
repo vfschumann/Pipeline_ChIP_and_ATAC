@@ -1,8 +1,10 @@
+# Example file, change Sample names, fastq_path, number of replicas (comment out the numbers which you don't have),
+# adapters (identified with fastqc, shall be cutted by cutadapt)
 
-fastq_path:
+fastq_path: # change to the location of the sequencing files
   "/fast/AG_Lab/user/seq-folder/seq-directory"
    
-samples:
+samples: # change sample name
 - adult_male_S3
 - adult_female_S4
 - embryo_96hpf_S5
